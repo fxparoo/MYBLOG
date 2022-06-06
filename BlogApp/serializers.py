@@ -5,10 +5,10 @@ from BlogApp.models import Post, Comment
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ['title', 'body', 'author', 'comment']
+        fields = ['title', 'content', 'author']
 
 
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
-        fields = ['author', 'body', 'author', ]
+        fields = ['author', 'content', 'post', ]
