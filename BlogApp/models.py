@@ -3,7 +3,7 @@ from django.db import models
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
-    content = models.CharField(max_length=300)
+    content = models.TextField(blank=True, null=True)
     author = models.CharField(max_length=50)
 
     class Meta:
@@ -15,8 +15,8 @@ class Post(models.Model):
 
 class Comment(models.Model):
     author = models.CharField(max_length=40)
-    content = models.CharField(max_length=40)
-    post = models.ForeignKey('Post', related_name='comment', on_delete=models.CASCADE, default='')
+    content = models.TextField(blank=True, null=True)
+    post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.author
