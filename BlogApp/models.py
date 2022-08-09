@@ -15,7 +15,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     author = models.CharField(max_length=40)
-    content = models.TextField(blank=Tru, null=True)
+    content = models.TextField(blank=True, null=True)
     post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
 
     def __str__(self):
