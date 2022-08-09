@@ -1,1 +1,2 @@
-web: gunicorn BlogApp.wsgi
+release: python manage.py migrate
+web: gunicorn myblog.wsgi
