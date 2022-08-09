@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf4fd349-7768-494d-b503-d8b5febd24f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/0002_rename_body_comment_content_rename_body_post_content.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myblog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../myblog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
